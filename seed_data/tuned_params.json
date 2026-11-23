@@ -1,0 +1,123 @@
+{
+  "version": 6,
+  "tuned_at": "2026-11-19 16:54:43",
+  "based_on": {
+    "period": "20260123 ~ 20261119",
+    "samples": 105,
+    "trade_days": 198,
+    "universe": 380
+  },
+  "params": {
+    "weights": {
+      "trend": 30.0,
+      "position": 15.0,
+      "limit_quality": 20.0,
+      "theme": 15.0,
+      "short_momentum": 20.0
+    },
+    "_grade_score_ema": {
+      "A": 1.39,
+      "B": -1.459,
+      "C": 13.894,
+      "D": 4.078
+    },
+    "buyable_grades": [
+      "C",
+      "D"
+    ],
+    "score_watch_min": 42,
+    "score_signal_min": 42,
+    "hold_horizon": 20,
+    "breakdown_filter": true,
+    "emotion_filter": false,
+    "_grade_scores": {
+      "A": {
+        "trend": "高位震荡",
+        "label": "高位平台反包型",
+        "expect": 1.354,
+        "samples": 8,
+        "ret": 6.77,
+        "win": 75.0,
+        "sample_ok": false
+      },
+      "B": {
+        "trend": "上升趋势",
+        "label": "上升趋势洗盘型",
+        "expect": -2.909,
+        "samples": 42,
+        "ret": -8.36,
+        "win": 34.8,
+        "sample_ok": true
+      },
+      "C": {
+        "trend": "震荡偏弱",
+        "label": "弱势反抽/中线修复型",
+        "expect": 18.048,
+        "samples": 27,
+        "ret": 22.56,
+        "win": 80.0,
+        "sample_ok": true
+      },
+      "D": {
+        "trend": "下跌趋势",
+        "label": "下跌反转型",
+        "expect": 4.601,
+        "samples": 17,
+        "ret": 9.86,
+        "win": 87.5,
+        "sample_ok": true
+      }
+    },
+    "_grade_combined": {
+      "A": 1.39,
+      "B": -1.459,
+      "C": 13.894,
+      "D": 4.078
+    },
+    "_scheme_scores": {
+      "当前权重": 0.0,
+      "趋势优先": 0.0,
+      "题材优先": 0.0,
+      "动能优先": 0.0
+    },
+    "_best_scheme": "当前权重",
+    "_effect": {
+      "period": "20260123 ~ 20261119",
+      "samples": 105,
+      "T+20收益": 4.32,
+      "T+20胜率": 57.4,
+      "overall_expect": 2.48
+    }
+  },
+  "decisions": [
+    "分级可买=C/D；主周期T+20期望(收益×胜率×置信)：A级1.4(样本8)，B级-1.5(样本42)，C级13.9(样本27)，D级4.1(样本17)",
+    "样本不足的等级暂不纳入（需≥15样本）：A级(样本8)",
+    "评分门槛敏感（收益极差3.3%），选最优门槛=40",
+    "权重方案主周期期望最高：当前权重（0.0）",
+    "连续大跌过滤=放宽（破位组期望5.8 vs 非破位-0.2）",
+    "情绪分位过滤=不启用（高情绪期望4.9 vs 低情绪-3.0，低情绪样本13）"
+  ],
+  "suggest": {
+    "_grade_combined": {
+      "A": 1.39,
+      "B": -1.459,
+      "C": 13.894,
+      "D": 4.078
+    },
+    "_best_scheme": "当前权重",
+    "_scheme_scores": {
+      "当前权重": 0.0,
+      "趋势优先": 0.0,
+      "题材优先": 0.0,
+      "动能优先": 0.0
+    },
+    "_effect": {
+      "period": "20260123 ~ 20261119",
+      "samples": 105,
+      "T+20收益": 4.32,
+      "T+20胜率": 57.4,
+      "overall_expect": 2.48
+    }
+  },
+  "caveat": "自动调参基于K线近似回测的相对比较，样本与置信度已折扣，仅供参考，不构成投资建议。"
+}
