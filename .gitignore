@@ -1,0 +1,21 @@
+# ===== Python 运行缓存 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ===== PyInstaller 构建中间产物与调试日志 =====
+build/
+*.log
+
+# ===== 运行时下载缓存（联网可自动重建） =====
+data/kline_cache/
+
+# ===== 个人运行数据（含自选池/跟踪记录，不入库） =====
+data/
+dist/A股情绪监测/data/
+
+# ===== EXE 成品目录（二进制文件单独打包为 ZIP 上传） =====
+dist/
+
+# ===== 工作区元数据 =====
+.workbuddy/
